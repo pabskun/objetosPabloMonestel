@@ -20,18 +20,32 @@ import java.util.ArrayList;
 - **Tipos de datos**: Pueden contener cualquier tipo de dato, ya sean datos primitivos u objetos.
 - **Genéricos**: Los ArrayList pueden almacenar tipos de datos u objetos genéricos, pero además se puede especificar el tipo de elementos que contiene.
 
+### ArrayList genérico
 
 ```java
 ArrayList listaGenerica = new ArrayList<>();
 ```
 
-ArrayList Tipado:
+### ArrayList Tipado:
 
 ```java
 ArrayList<String> listaDeStrings = new ArrayList<String>();
 ```
-ArrayList de Objetos:
+### ArrayList de Objetos:
 
 ```java
 ArrayList<Persona> listaDeObjetos = new ArrayList<Persona>();
 ```
+
+### Métodos de acceso y modificación de los ArrayList
+
+| Método              | Definición                                                       |
+|---------------------|-----------------------------------------------------------------|
+| `add(E e)`          | Añade un elemento al final de la lista                           |
+| `get(int index)`    | Retorna el elemento que se encuentra en la posición especificada |
+| `remove(int index)` | Elimina el elemento que se encuentra en la posición indicada     |
+| `size()`            | Retorna el tamaño (cantidad de elementos) del **ArrayList**      |
+| `isEmpty()`         | Verifica si la lista está vacía                                  |
+| `contains(Object o)`| Verifica si un elemento se encuentra dentro de la lista          |
+| `clear()`           | Vacía la lista                                                   |
+
