@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         //Definición del TreeMap la clave se define String y el valor String
         TreeMap<String, String> personas = new TreeMap<>();
-        
+
         personas.put("111", "Pablo");
         personas.put("222", "Morgana");
         personas.put("333", "Agata");
