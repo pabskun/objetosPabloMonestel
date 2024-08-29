@@ -49,3 +49,27 @@ ArrayList<Persona> listaDeObjetos = new ArrayList<Persona>();
 | `contains(Object o)`| Verifica si un elemento se encuentra dentro de la lista          |
 | `clear()`           | Vacía la lista                                                   |
 
+## Ventajas de usar ArrayList
+
+- **Flexibilidad**: Los elementos se agregan o eliminan de forma dinámica.
+- **Facilidad de uso**: Los métodos que posee facilitan la manipulación de la lista.
+
+## Desventajas de usar ArrayList
+
+- **Rendimiento**: Suele ser más lento al agregar o eliminar elementos que se encuentren en el medio de la lista, ya que requiere mover todos los elementos que se encuentran dentro.
+
+# 🌳 Map
+
+Los Map son colecciones en Java que asocian claves únicas con valores.
+
+## Importar la clase TreeMap
+
+Para usar `TreeMap`, es necesario importar el paquete correspondiente:
+
+```java
+import java.util.TreeMap;
+```
+## Tipos de Map
+- **HashMap<K,V>**: Almacena conjuntos clave-valor sin un orden específico.
+- **TreeMap<K,V>**: Utiliza una estructura de árbol para ordenar las claves.
+- **LinkedHashMap<K,V>**: Similar al HashMap, pero mantiene el orden de inserción.
