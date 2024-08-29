@@ -1,4 +1,4 @@
-# 📚 Java Collections Guide
+# 📚 Guiá de Colecciones de Java
 
 Este repositorio proporciona una guía detallada sobre el uso de **ArrayList** y **Map** en Java, incluyendo ejemplos y explicaciones sobre sus características, métodos, ventajas y desventajas.
 
@@ -13,12 +13,13 @@ Para usar **ArrayList**, es necesario importar el paquete correspondiente:
 ```java
 import java.util.ArrayList;
 ```
-Características de ArrayList
-Capacidad dinámica: Permite agregar o eliminar elementos sin un tamaño fijo.
-Índices iniciados en cero.
-Tipo de datos genérico: Puede contener datos primitivos u objetos.
-Ejemplos de uso
-ArrayList Genérico:
+## Características de los ArrayList
+
+- **Capacidad dinámica**: En lugar de tener un tamaño fijo, se le pueden agregar o eliminar elementos según la necesidad.
+- **Índices**: Inician en cero.
+- **Tipos de datos**: Pueden contener cualquier tipo de dato, ya sean datos primitivos u objetos.
+- **Genéricos**: Los ArrayList pueden almacenar tipos de datos u objetos genéricos, pero además se puede especificar el tipo de elementos que contiene.
+
 
 ```java
 ArrayList listaGenerica = new ArrayList<>();
