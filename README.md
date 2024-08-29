@@ -12,7 +12,7 @@ Para usar **ArrayList**, es necesario importar el paquete correspondiente:
 
 ```java
 import java.util.ArrayList;
-
+```
 Características de ArrayList
 Capacidad dinámica: Permite agregar o eliminar elementos sin un tamaño fijo.
 Índices iniciados en cero.
@@ -20,4 +20,17 @@ Tipo de datos genérico: Puede contener datos primitivos u objetos.
 Ejemplos de uso
 ArrayList Genérico:
 
+```java
 ArrayList listaGenerica = new ArrayList<>();
+```
+
+ArrayList Tipado:
+
+```java
+ArrayList<String> listaDeStrings = new ArrayList<String>();
+```
+ArrayList de Objetos:
+
+```java
+ArrayList<Persona> listaDeObjetos = new ArrayList<Persona>();
+```
