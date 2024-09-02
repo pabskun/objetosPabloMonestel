@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ArrayListConObjetosAnidados.iml" filepath="$PROJECT_DIR$/ArrayListConObjetosAnidados.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjetosConArrayListDeObjetos.iml" filepath="$PROJECT_DIR$/ObjetosConArrayListDeObjetos.iml" />
     </modules>
   </component>
 </project>
