@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14c3d558-c0fa-4259-8dde-2697c907f63b" name="Changes" comment="" />
+    <list default="true" id="14c3d558-c0fa-4259-8dde-2697c907f63b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../2. TreeMaps/EjemploTreeMapSencillo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../2. TreeMaps/EjemploTreeMapSencillo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2. TreeMaps/EjemploTreeMapSencillo/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2. TreeMaps/EjemploTreeMapSencillo/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +58,9 @@
       <updated>1725324876516</updated>
       <workItem from="1725324879765" duration="4063000" />
       <workItem from="1725364911993" duration="1995000" />
+      <workItem from="1725456087259" duration="139000" />
+      <workItem from="1725470500999" duration="32000" />
+      <workItem from="1725494032652" duration="4000" />
     </task>
     <servers />
   </component>
