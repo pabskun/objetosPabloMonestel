@@ -2,7 +2,7 @@
   <artifact type="jar" name="ProyectoClase:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/ProyectoClase_jar</output-path>
     <root id="archive" name="ProyectoClase.jar">
-      <element id="module-output" name="ProyectoClase" />
+      <element id="module-output" name="ProyectoClaseConBD" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../../mysql-connector-j-9.1.0/mysql-connector-j-9.1.0.jar" path-in-jar="/" />
     </root>
   </artifact>

@@ -1,9 +1,9 @@
 package monestel.pablo.bl.entities;
 
 public class Persona {
-    private String cedula;
-    private String nombre;
-    private int edad;
+    protected String cedula;
+    protected String nombre;
+    protected int edad;
 
     public Persona(String cedula, String nombre, int edad) {
         this.cedula = cedula;

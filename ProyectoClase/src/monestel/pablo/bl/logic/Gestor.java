@@ -1,6 +1,8 @@
 package monestel.pablo.bl.logic;
 
+import monestel.pablo.bl.entities.Cliente;
 import monestel.pablo.bl.entities.Persona;
+import monestel.pablo.dl.ClienteDao;
 import monestel.pablo.dl.PersonaDao;
 
 import java.util.ArrayList;
@@ -9,6 +11,7 @@ import java.util.ArrayList;
 public class Gestor {
     private ArrayList<Persona> listaPersonas = new ArrayList<Persona>();
     private PersonaDao personaDao = new PersonaDao();
+    private ClienteDao clienteDao = new ClienteDao();
     public String agregarPersona(String cedula, String nombre, int edad ){
         String msj = "";
         try{
@@ -64,4 +67,21 @@ public class Gestor {
         return msj;
     }
 
+    public String agregarCliente(String cedula, String nombre, int edad, String correo, double saldo){
+        String msj;
+        try{
+            agregarPersona(cedula, nombre, edad);
+            Cliente objCliente = new Cliente(cedula,nombre, edad,correo, saldo);
+            clienteDao.insertar(objCliente);
+            msj = "Cliente registrado con exito";
+        }catch(Exception e){
+            msj = "Cliente no se logró registrar";
+            System.out.println(e.getMessage());
+        }
+
+        return msj;
+    }
+    public ArrayList<Cliente> obtenerListaClientes() throws Exception {
+        return clienteDao.listarClientes();
+    }
 }
