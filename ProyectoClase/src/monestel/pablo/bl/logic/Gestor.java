@@ -2,16 +2,19 @@ package monestel.pablo.bl.logic;
 
 import monestel.pablo.bl.entities.Cliente;
 import monestel.pablo.bl.entities.Persona;
+import monestel.pablo.bl.entities.Proyecto;
 import monestel.pablo.dl.ClienteDao;
 import monestel.pablo.dl.PersonaDao;
+import monestel.pablo.dl.ProyectoDao;
 
 import java.util.ArrayList;
-//El Gestor recibe tipos de datos String, int, boolean, Date, etc... Pero no debe recibir objetos de negocio
-//El Gestor es el responsable de crear instancias de objetos
+
 public class Gestor {
     private ArrayList<Persona> listaPersonas = new ArrayList<Persona>();
     private PersonaDao personaDao = new PersonaDao();
     private ClienteDao clienteDao = new ClienteDao();
+    private ProyectoDao proyectoDao = new ProyectoDao();
+
     public String agregarPersona(String cedula, String nombre, int edad ){
         String msj = "";
         try{
@@ -83,5 +86,35 @@ public class Gestor {
     }
     public ArrayList<Cliente> obtenerListaClientes() throws Exception {
         return clienteDao.listarClientes();
+    }
+    public Cliente buscarClientePorCedula(String cedula) throws Exception {
+        Cliente objCliente = null;
+        try{
+            objCliente = clienteDao.buscarPorCedula(cedula);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        return objCliente;
+    }
+    public Proyecto buscarProyectoPorId(int id) throws Exception {
+        Proyecto objProyecto = null;
+        try{
+            objProyecto = proyectoDao.buscarPorId(id);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        return objProyecto;
+    }
+    public String asociarProyectoACliente(String cedulaCliente, int idProyecto){
+        String msj = "";
+        try{
+            Cliente objCliente = buscarClientePorCedula(cedulaCliente);
+            Proyecto objProyecto = buscarProyectoPorId(idProyecto);
+
+            proyectoDao.asociarProyectoACliente(objCliente,objProyecto);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        return msj;
     }
 }

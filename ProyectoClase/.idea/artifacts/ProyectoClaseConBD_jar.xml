@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="ProyectoClase:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/ProyectoClase_jar</output-path>
-    <root id="archive" name="ProyectoClase.jar">
+  <artifact type="jar" name="ProyectoClaseConBD:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ProyectoClaseConBD_jar</output-path>
+    <root id="archive" name="ProyectoClaseConBD.jar">
       <element id="module-output" name="ProyectoClaseConBD" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../../mysql-connector-j-9.1.0/mysql-connector-j-9.1.0.jar" path-in-jar="/" />
     </root>

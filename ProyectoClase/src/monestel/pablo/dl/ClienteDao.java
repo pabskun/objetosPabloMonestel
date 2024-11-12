@@ -65,4 +65,35 @@ public class ClienteDao {
         }
         return listaClientes;
     }
+
+    public Cliente buscarPorCedula(String cedula) throws Exception {
+        Cliente clienteEncontrado = null;
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+        try{
+            conn = DataBaseConnection.getConnection();
+            String query ="select p.cedula, p.nombre, p.edad, c.correo, c.saldo from cliente as c inner join persona as p on (c.ced_persona = p.cedula) where c.ced_persona = ?";
+
+            stmt = conn.prepareStatement(query);
+            stmt.setString(1, cedula);
+            rs = stmt.executeQuery();
+
+            if(rs.next()){
+                String nombre = rs.getString("nombre");
+                String cedulaCliente = rs.getString("cedula");
+                int edad = rs.getInt("edad");
+                String correo = rs.getString("correo");
+                double saldo = rs.getDouble("saldo");
+
+                clienteEncontrado = new Cliente(cedulaCliente, nombre, edad, correo, saldo);
+            }
+
+        }catch(Exception e){
+            throw new Exception (e.getMessage());
+        }finally{
+            DataBaseConnection.closeConnection(conn);
+        }
+        return  clienteEncontrado;
+    }
 }

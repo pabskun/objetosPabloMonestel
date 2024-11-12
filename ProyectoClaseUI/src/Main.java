@@ -19,6 +19,7 @@ public class Main {
             System.out.println("3. Eliminar una persona");
             System.out.println("4. Registrar un cliente");
             System.out.println("5. Imprimir lista de clientes");
+            System.out.println("6. Asociar proyecto a cliente");
             System.out.println("9. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
@@ -39,6 +40,9 @@ public class Main {
                     break;
                 case 5:
                     imprimirListaClientes();
+                    break;
+                case 6:
+                    asociarProyectoACliente();
                     break;
                 case 9:
                     System.out.println("Saliendo del programa...");
@@ -116,5 +120,14 @@ public class Main {
         for(Cliente cliente : listaClientes){
             System.out.println(cliente.toString());
         }
+    }
+    public static void asociarProyectoACliente() throws Exception{
+        System.out.println("Ingrese la cédula del cliente: ");
+        String cedula = scanner.nextLine();
+
+        System.out.println("Ingrese el id del proyecto: ");
+        int id = Integer.parseInt(scanner.nextLine());
+
+        gestor.asociarProyectoACliente(cedula,id);
     }
 }
